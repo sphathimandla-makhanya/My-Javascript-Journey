@@ -88,11 +88,86 @@ let something = undefined
 // ***********C. Task 3. functions and contional statements************
 // N.B. READ WITH UNDERSTANDING!!!
 //  1.  Create 3 functions to convert R1000 into dollars, euros and pounds. Take function naming into consideration!
+
+let rand = 1000;
+
+function randToDollar() {
+    return rand * 0.054
+    
+}
+console.log(`R1000 is equal to $${randToDollar()} `)
+
+function randToEuro(euro) {
+    return rand * euro
+}
+
+console.log(`R1000 is equal to ${randToEuro(0.051)} euros`)
+
+function randToPound(pound) {
+    return rand * pound
+}
+
+console.log(`R1000 is equal to ${randToPound(0.041)} pounds`)
+
 //  2.  Create a function that takes a value and calculates the amount entered including VAT (15%), amount entered should be R400.
 //      Then display the message in the console, "The amount after tax is ...".
+function calculator(value) {
+    let amount = 400
+    return amount * value + amount
+}
+
+console.log(calculator(0.15))
+
 //  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “1stNum” and “2ndNum” and 
 //      displays the larger value.
+
+let firstNum = 8
+let secondNum = 20
+let thirdNum = 14
+
+function comparison(firstNum,secondNum) {
+    if(firstNum<secondNum){
+        console.log(`SecondNum is greater than firstNum, and has a value of `+secondNum)
+    }
+    else{
+        console.log(`FirstNum is greater than secondNum`)}
+}
+comparison(firstNum,secondNum);
 //  4.  Write a function that determines whether “num1” is odd or even and displays the
 //      result. (Tip: remember the modulus operator %)
+function evenOrOdd(firstNum) {
+    if( firstNum % 2 ===0){
+       
+        console.log(`even`)
+    }
+    else{
+        console.log(`odd`)}
+}
+evenOrOdd(firstNum);
+
 //  5.  Next, write a JavaScript conditional statement to sort the three numbers(1stNum, 2ndNum, 3rdNum) from largest to smallest.
+
+function sortFromLarge(firstNum, secondNum, thirdNum) {
+    if (firstNum >= secondNum && firstNum >= thirdNum) {
+      if (secondNum >= thirdNum) {
+        console.log(`Sorted: ${firstNum}, ${secondNum}, ${thirdNum}`);
+      } else {
+        console.log(`Sorted: ${firstNum}, ${thirdNum}, ${secondNum}`);
+      }
+    } else if (secondNum >= firstNum && secondNum >= thirdNum) {
+      if (firstNum >= thirdNum) {
+        console.log(`Sorted: ${secondNum}, ${firstNum}, ${thirdNum}`);
+      } else {
+        console.log(`Sorted: ${secondNum}, ${thirdNum}, ${firstNum}`);
+      }
+    } else {
+      if (firstNum >= secondNum) {
+        console.log(`Sorted: ${thirdNum}, ${firstNum}, ${secondNum}`);
+      } else {
+        console.log(`Sorted: ${thirdNum}, ${secondNum}, ${firstNum}`);
+      }
+    }
+  }
+
+  sortFromLarge(firstNum, secondNum, thirdNum)
 
