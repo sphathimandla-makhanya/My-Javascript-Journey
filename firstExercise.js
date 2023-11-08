@@ -47,17 +47,50 @@ console.log(num1+` / `+num2 +` = `+modulus +` remainder `+ modulus)
 
 // B. Task 2:Data Types
 // 1. Define the following data types with your own contents[ 'integer', 'decimal', 'string', 'array'(minimum: 3 items), 'Object'(minimum: 4 values)]
+
+let integer = 5;
+let decimal = 2.5;
+let string = "Javascript"
+let array = ['banana', 'apple', 'grape'];
+let object ={
+    house: "big",
+    color: "white",
+    place: "Cape Town",
+    rooms: 5
+}
+
 // 2. Once you’ve created the variables, display them to the console
+
+console.log(integer)
+console.log(decimal)
+console.log(string)
+console.log(array)
+console.log(object)
+
 // 3. Use the ‘typeof’ function to check each variable
-// 4. Create an array with numbers and strings. Comment what data type you expect this tobe. Then use the ‘typeof’ function on this array
+console.log(typeof (integer))
+console.log(typeof (decimal))
+console.log(typeof (string))
+console.log(typeof (array))
+console.log(typeof (object))
+
+// 4. Create an array with numbers and strings. Comment what data type you expect this tobe. Then use the ‘typeof’ function on this array 
+//This is an object data type
+
+let numStringes = ['banana', 2, 'grapes', 'oranges', 5]
+console.log( typeof(numStringes))
+
+
 // 5. Create a null variable and an undefined variable
+let nothing = null
+let something = undefined
 
 // ***********C. Task 3. functions and contional statements************
 // N.B. READ WITH UNDERSTANDING!!!
 //  1.  Create 3 functions to convert R1000 into dollars, euros and pounds. Take function naming into consideration!
 //  2.  Create a function that takes a value and calculates the amount entered including VAT (15%), amount entered should be R400.
 //      Then display the message in the console, "The amount after tax is ...".
-//  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “num1” and “num2” and 
+//  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “1stNum” and “2ndNum” and 
 //      displays the larger value.
 //  4.  Write a function that determines whether “num1” is odd or even and displays the
 //      result. (Tip: remember the modulus operator %)
